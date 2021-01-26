@@ -59,16 +59,16 @@ def main(file1, file2, config_src=None):
 
 
 if __name__ == "__main__":
-    # Quick sanity check on arguments
+    # Quick sanity check on arguments. 
+    # Note we should probably implement more robust arg
+    # processing.
     if len(sys.argv) < 3:
-        # sys.stderr.write(f'usage: text_compare [file1] [file2]\n')
-        # sys.stderr.flush()
-        # sys.exit(-1)
-        file1 = 'sample1.txt'
-        file2 = 'sample3.txt'
-    else:
-        file1 = sys.argv[1]
-        file2 = sys.argv[2]
+        sys.stderr.write(f'usage: driver.py [file1] [file2]\n')
+        sys.stderr.flush()
+        sys.exit(-1)
+
+    file1 = sys.argv[1]
+    file2 = sys.argv[2]
 
     ret_val = main(file1, file2, config_src='config/config.json')
 
