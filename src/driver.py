@@ -49,8 +49,8 @@ def main(file1, file2, config_src=None):
         sys.stderr.flush()
 
     except Exception as e:
-        logging.critical(f'Process failure - exception:  {e.msg}')
-        sys.stderr.write(f'Process failure - exception:  {e.msg}\n')
+        logging.critical(f'Process failure - exception:  {e}')
+        sys.stderr.write(f'Process failure - exception:  {e}\n')
         sys.stderr.flush()
         exit(-1)
 
