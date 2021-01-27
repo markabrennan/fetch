@@ -117,9 +117,9 @@ and running a comparison function all happens in the text_processor module.
 This module is re-used by the Flask app.
 
 Because the Jaccard score is but one way of measuring text similarity, I wanted
-to allow the easy exchange of new comparison functions. I therefore use some
-minor Python meta-programming to fetch the name of the comparison function from 
-configuration, and then fetch the Python function object name from the runtime
+to allow for the easy exchange of new comparison functions. I therefore use some
+minor Python meta-programming techniques to fetch the name of the comparison function 
+from configuration, and then fetch the Python function object name from the runtime
 namespace.  A new function can be written, dropped into the module file, and
 the configuration changed, without having to change any other code, especially 
 the client code in the driver module.
