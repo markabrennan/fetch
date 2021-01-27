@@ -1,5 +1,10 @@
 """
-Draft code to process text
+This module contains functions for ingesting and
+processing text. Text similarity is measured
+with a function that implements the Jaccard
+similarity score, but other functions
+may be used, as long as they take as arguments
+two text word lists.
 """
 
 import logging
