@@ -46,6 +46,7 @@ The Flask library must be imported. I suggest creating a virtual environment.
 At the project root, execute on the command line:
 
 $ python3 -m venv .venv
+
 $ source .venv/bin/activate
 
 You can now install the requirements:
