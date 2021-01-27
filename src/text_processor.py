@@ -6,7 +6,6 @@ import logging
 import string
 import re
 import sys
-from collections import Counter
 
 
 def derive_core_words(text, stopwords):
@@ -78,5 +77,7 @@ def get_jaccard_sim(words1, words2):
     b = set(words2)
     c = a.intersection(b)
 
-    logging.info(f'words in common: {c} | num unique words: {len(a) + len(b) - len(c)}')
-    return round(float(len(c)) / (len(a) + len(b) - len(c)), 4)
+    score = round(float(len(c)) / (len(a) + len(b) - len(c)), 4)
+
+    logging.info(f'comparison score: {score} | words in common: {c} | num unique words: {len(a) + len(b) - len(c)}')
+    return score
