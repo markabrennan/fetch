@@ -21,8 +21,11 @@ Note that the sample input texts as provided in the challenge have been
 saved in a *data* directory.
 
 There are THREE (3) text samples:
+
 sample1.txt
+
 sample2.txt
+
 sample3.txt
 
 At the command line at the project root, run the following script:
@@ -88,8 +91,8 @@ some exploratory data analysis (EDA), I also recorded word frequencies
 for each document, and noted for example that sample 1 and sample 2
 have similar word frequencies.
 
-However, instead of using word frequencies I instead create sets of unique
-words for each document, and then apply the simple Jaccard similarity score, 
+However, instead of using word frequencies I created sets of unique
+words for each document, and then applied the simple Jaccard similarity score, 
 which calculates the quotient of the intersection (words in common) by all
 the words (union of both documents). Python's set methods make this quite 
 simple and straightforward.  There are other NLP metrics for similarity, but
