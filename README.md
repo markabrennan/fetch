@@ -26,6 +26,7 @@ sample2.txt
 sample3.txt
 
 At the command line at the project root, run the following script:
+
 $ ./run.sh sample1.txt sample2.txt
 
 Note the script requires two arguments. You may of course denote different 
@@ -40,13 +41,16 @@ A small Flask app makes use of the same text comparison logic.
 
 The Flask library must be imported. I suggest creating a virtual environment.
 At the project root, execute on the command line:
+
 $ python3 -m venv .venv
 $ source .venv/bin/activate
 
 You can now install the requirements:
+
 $ pip install -r requirements.txt
 
 You can now fire up the Flask app, via this script:
+
 $ ./run_flask.sh
 
 Flask will start a dev web server running (in the foreground) in your shell.
