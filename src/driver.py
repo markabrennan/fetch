@@ -52,7 +52,7 @@ def main(file1, file2, config_src=None):
         logging.critical(f'Process failure - exception:  {e}')
         sys.stderr.write(f'Process failure - exception:  {e}\n')
         sys.stderr.flush()
-        exit(-1)
+        exit(1)
 
     # we've successfully concluded all processing so exit 0
     return 0
@@ -65,7 +65,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 3:
         sys.stderr.write(f'usage: driver.py [file1] [file2]\n')
         sys.stderr.flush()
-        sys.exit(-1)
+        sys.exit(1)
 
     file1 = sys.argv[1]
     file2 = sys.argv[2]
