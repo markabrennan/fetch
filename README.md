@@ -92,7 +92,7 @@ some exploratory data analysis (EDA), I also recorded word frequencies
 for each document, and noted for example that sample 1 and sample 2
 have similar word frequencies.
 
-However, instead of using word frequencies I created sets of unique
+However, instead of using word frequencies, I created sets of unique
 words for each document, and then applied the simple Jaccard similarity score, 
 which calculates the quotient of the intersection (words in common) by all
 the words (union of both documents). Python's set methods make this quite 
@@ -102,7 +102,7 @@ they require APIs which I couldn't use.
 ### Code Organization
 With the exception of my use of a Config Mgr class to handle reading and
 fetching config information, my code is very functional, and not object-oriented. 
-With refined requiremnents and more concrete use cases, I could see
+With refined requirements and more concrete use cases, I could see
 refactoring some of the code into classes.  For example, a more robust Flask
 app could possibly benefit from more OO-based code for the text processing.
 
